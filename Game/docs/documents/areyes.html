@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/design.css">
+</head>
+<body id="body-z2">
+    <style>
+        #myContainer {
+       
+          position: relative;
+       
+        }
+        #myAnimation {
+          float: left;
+          padding: 0px;
+          margin: 180px;
+          width: 380px;
+          height: 415px;
+          position: absolute;
+          background-image:url("../images/aresey-IMG.png");;
+          background-position: height 370px;
+	     background-size:cover;
+        }
+
+        </style>
+        
+            
+            <div id ="myContainer">
+            <div id ="myAnimation"></div>
+            </div>
+            
+            <script>
+            var id = null;
+            function myMove() {
+              var elem = document.getElementById("myAnimation");   
+              var pos = 0;
+              clearInterval(id);
+              id = setInterval(frame, 1); 
+              function frame() {
+                if (pos == 600) {
+                  clearInterval(id);
+                } else {
+                  pos++; 
+                //   elem.style.top = pos + 'px'; 
+                  elem.style.left = pos + 'px';                  
+                }
+              }
+            }
+            </script>
+            <!-- <div id="foe-x" >
+            <img src="" >
+            </div> -->
+
+            <div id="bulb1">
+              <img id="MyImage" src="../images/vrag4-IMG.png"/>
+            </div>
+                
+                <div id="btn-zxcf">
+                  <button class="glow-on-hover" type="button" onclick="myMove()">БИТКА</button>
+                </div>
+    
+                    <div id="btn-zxcf">
+                      <button class="glow-on-hover" type="button" onclick="document.getElementById('MyImage').src=
+                      '../images/vrag4-DEAD-IMG.png'">УДАР</button>
+                    </div>
+                    
+                    
+                    <div  id="btn-zxcf">
+                      <a href="areyes.html">
+                        <button class="glow-on-hover" type="button"  onclick="document.getElementById('MyImage').src=
+                      '../images/vrag4-IMG.png'"> РЕСТАРТ </button>
+                    </a>
+                      </div>
+
+</body>
+</html>
