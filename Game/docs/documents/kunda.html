@@ -1,90 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kunda</title>
-    <link rel="stylesheet" href="../style/design.css">
-    <link rel="stylesheet" href="../style/backrounds.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kunda</title>
+  <link rel="stylesheet" href="../style/design.css">
+  <link rel="stylesheet" href="../style/backrounds.css">
+  <link rel="stylesheet" href="../style/buttonsAndHoverEffects.css">
+  <script src="../style/jsDesign.js"> </script>
+
 
 </head>
+
 <body id="body-z2">
-  
-    <style>
-        #myContainer {
-       
-          position: relative;
-       
-        }
-        #myAnimation {
-          float: left;
-          padding: 0px;
-          margin: 150px;
-          width: 350px;
-          height: 600px;
-          position: absolute;
-          background-image:url("../images/kunda-IMG.png");;
-          background-position: height 400px;
-	     background-size:cover;
 
-        }
-         
+  <style>
+    #myContainer {
 
-        </style>
-       
-       
-            
-            <div id ="myContainer">
-            <div id ="myAnimation"></div>
-            </div>
-            
-            <script>
-            var id = null;
-            function myMove() {
-              var elem = document.getElementById("myAnimation");   
-              var pos = 0;
-              clearInterval(id);
-              id = setInterval(frame, 1); 
-              function frame() {
-                if (pos == 600) {
-                  clearInterval(id);
-                } else {
-                  pos++; 
-                //   elem.style.top = pos + 'px'; 
-                  elem.style.left = pos + 'px';                  
-                }
-              }
-            }
-            </script>
-            <!-- <div id="foe-x" >
-            <img src="" >
-            </div> -->
+      position: relative;
 
-            <div id="bulb1">
-              <img id="MyImage2" src="../images/vrag3-IMG.png"/>
-            </div>
-            
-                <div id="btn-zxcf">
-                <button class="glow-on-hover" type="button" onclick="myMove()">БИТКА</button>
-              </div>
+    }
 
-                 <div id="btn-zxcf">
-                   <a href="kunda2.html">
-                <button class="glow-on-hover" type="button" onclick="document.getElementById('MyImage').src=
+    #myAnimation {
+      float: left;
+      padding: 0px;
+      margin: 150px;
+      width: 350px;
+      height: 600px;
+      position: absolute;
+      background-image: url("../images/kunda-IMG.png");
+      ;
+      background-position: height 400px;
+      background-size: cover;
+
+    }
+  </style>
+
+
+
+  <div id="myContainer">
+    <div id="myAnimation"></div>
+  </div>
+
+
+  <div id="bulb1">
+    <img id="MyImage2" src="../images/vrag3-IMG.png" />
+  </div>
+
+  <div id="btn-zxcf">
+    <button class="glow-on-hover" type="button" onclick="myMove()">БИТКА</button>
+  </div>
+
+  <div id="btn-zxcf">
+    <a href="kunda2.html">
+      <button class="glow-on-hover" type="button" onclick="document.getElementById('MyImage').src=
                  '../images/vrag3-DEAD-IMG.png'">УДАР</button>
-                </a> 
-              </div>
-                
-       
-                <div  id="btn-zxcf">
-                  <a href="kunda.html">
-                <button class="glow-on-hover" type="button"  onclick="document.getElementById('MyImage').src=
+    </a>
+  </div>
+
+
+  <div id="btn-zxcf">
+    <a href="kunda.html">
+      <button class="glow-on-hover" type="button" onclick="document.getElementById('MyImage').src=
                 '../images/vrag3-IMG.png'"> РЕСТАРТ </button>
-                </a> 
-              
+    </a>
+  </div>
 
-
-      </div>
+ 
+  <div id="btn-zxcf">
+    <a href="index.html">
+      <button class="glow-on-hover" type="button"> ИЗХОД </button>
+    </a>
+  </div>
+  
 </body>
+
 </html>

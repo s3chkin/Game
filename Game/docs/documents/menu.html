@@ -1,59 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="../docs/style/design.css"> -->
     <link rel="stylesheet" href="../style/design.css">
     <link rel="stylesheet" href="../style/backrounds.css">
+    <link rel="stylesheet" href="../style/buttonsAndHoverEffects.css">
+    <script src="../style/jsDesign.js"></script>
+
 
 
     <title>Home</title>
 </head>
+
 <body id="body1">
 
     <h1 class="ml6" align="center">
         <span class="text-wrapper">
-          <span class="letters">Добре дошли!</span>
+            <span class="letters">Добре дошли!</span>
         </span>
-      </h1>
-      
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-      <script>
-         var textWrapper = document.querySelector('.ml6 .letters');
+    </h1>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+        var textWrapper = document.querySelector('.ml6 .letters');
         textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-        anime.timeline({loop: true}).add({targets: '.ml6 .letter',translateY: ["1.1em", 0],
+        anime.timeline({ loop: true }).add({
+            targets: '.ml6 .letter', translateY: ["1.1em", 0],
             translateZ: 0,
             duration: 750,
-            delay: (el, i) => 50 * i}).add({
+            delay: (el, i) => 50 * i
+        }).add({
             targets: '.ml6',
             opacity: 0,
             duration: 1000,
             easing: "easeOutExpo",
             delay: 1000
         });
-      </script>
-
-    <!-- <div class="home">
-    <h1>Добре дошли!</h1>
-    </div> -->
+    </script>
 
 
-    <div class="button-z" align="center">                   
+    <div class="button-z" align="center">
         <a href="index2.html">
-        <button class="btn_1">     
+            <button class="btn_1">
                 Създай герой!
-        </button> </a>
+            </button> </a>
     </div>
 
 
-    <div id="button2-z" align="center"> 
+    <div id="button2-z" align="center">
         <a href="indexHero.html">
-        <button class="btn_3">     
+            <button class="btn_3">
                 Избери герой
-        </button> </a>
+            </button> </a>
     </div>
-    
+
 </body>
+
 </html>
