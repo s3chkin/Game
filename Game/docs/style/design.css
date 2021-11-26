@@ -1,17 +1,4 @@
-#body1
-{
-    background-image:url("../images/WelcomeImg.jpg");
-    background-position:height 800px;
-	  background-size:cover;
-    font-family: cursive;
-}
-#body_z1
-{
-    background-image:url("../images/startmenu3.jpg");
-    background-position:height 800px;
-	  background-size:cover;
 
-}
 
 
 .game-button {
@@ -159,16 +146,6 @@
 }
 
 
-#body2
-{
-  background-image:url("../images/izbor-na-karta.jpg");
-  background-position:height 1000px;
-	background-size:cover;
-  font-family: cursive;
-  
-}
-
-
  #kind
 {
     display: block;
@@ -265,12 +242,7 @@ input[type=text], select {
   }
   
   
-  #body3 {
-    background-image:url("../images/izbor-na-karta.jpg");
-    background-position:height 1000px;
-    background-size:cover;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+  
   
   .flip-card {
     background-color: transparent;
@@ -401,13 +373,7 @@ input[type=text], select {
     float: right;
   }
 
-  #body-z2
-  {
-    background-image:url("../images/arena-IMG.jpg");
-    background-position:height 800px;
-	  background-size:cover;
-    font-family: cursive;
-  }
+  
  #bulb1
 {
   float: right;
